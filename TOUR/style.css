@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  letter-spacing: 3px;
+  background: cornflowerblue;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.3s linear;
+  border: 2px solid transparent;
+}
+.btn:hover {
+  background: white;
+  color: cornflowerblue;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 16px 32px;
+  position: fixed;
+  width: 100%;
+  background: white;
+}
+
+.navDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+}
+
+.navLink {
+  padding: 16px 32px;
+  display: block;
+  letter-spacing: 3px;
+  color: gray;
+  transition: all 0.3s linear;
+}
+
+.navLink:hover {
+  color: cornflowerblue;
+}
+
+.navIcons {
+  display: flex;
+}
+.navIcon {
+  margin-right: 12px;
+  font-size: 20px;
+  color: cornflowerblue;
+}
+
+.navHeader img {
+  width: 50px;
+}
+
+.bannerSection {
+  background: url('images/main.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerDiv {
+  color: tomato;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.bannerBtn {
+  color: tomato;
+  background: white;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+.bannerBtn:hover {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.bannerBtnDiv {
+  margin-top: 30px;
+}
+.aboutSection {
+  padding: 50px 0px;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 100px;
+}
+.aboutPhoto {
+  width: 100%;
+  position: relative;
+}
+.aboutImg {
+  width: 50%;
+  position: relative;
+}
+.aboutImg::before {
+  content: '';
+  position: absolute;
+  content: '';
+  position: absolute;
+  border: 8px solid cornflowerblue;
+  width: 100%;
+  height: 100%;
+  top: -25px;
+  left: -25px;
+  box-sizing: border-box;
+}
+.aboutInfo {
+  width: 40%;
+}
+.aboutTitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.aboutTitle h2 {
+  text-transform: uppercase;
+}
+
+.btnDiv {
+  margin-top: 20px;
+}
+
+.servicesContainer {
+  background: mediumorchid;
+  padding: 50px 20px;
+}
+.servicesTitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.services {
+  display: flex;
+}
+.service {
+  display: flex;
+}
+.serviceIcon {
+  font-size: 32px;
+  padding: 8px;
+  background: cornflowerblue;
+  border-radius: 10px;
+  color: white;
+  align-self: start;
+}
+
+.serviceInfo {
+  padding-left: 16px;
+}
+.serviceTitle {
+  margin-bottom: 10px;
+}
+.tourSection {
+  padding: 50px 0px;
+}
+.tourCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0px 50px;
+}
+
+.tourCard {
+  width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+}
+
+.tourImg {
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+  height: 300px;
+}
+.tourImgContainer {
+  position: relative;
+}
+
+.tourDate {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: cornflowerblue;
+  color: white;
+  padding: 4px 8px;
+  margin-bottom: 4px;
+  border-radius: 15px 0px 0px 0px;
+}
+.tourFooter {
+  display: flex;
+  justify-content: space-between;
+  color: cornflowerblue;
+}
+.tourInfo {
+  padding: 20px 25px;
+}
+.tourTitle p,
+.tourTitle h4 {
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+
+.tourTitle p {
+  color: gray;
+}
+
+.tourMainTitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.tourBtn {
+  text-align: center;
+}
+
+.galleries {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galleryImgContainer {
+  width: 25%;
+  height: 250px;
+  position: relative;
+}
+.galleryIcon {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.galleryImgContainer:hover .galleryIcon {
+  opacity: 1;
+}
+.galleryImgContainer:hover .galleryImg {
+  opacity: 0.5;
+}
+.galleryImg {
+  width: 100%;
+  height: 100%;
+}
+.contactSection {
+  padding: 50px 0px;
+  background: cornflowerblue;
+}
+.contactContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactTitle {
+  color: white;
+}
+.formControl {
+  min-width: 400px;
+}
+
+.formControl,
+.btnSubmit {
+  padding: 5px 10px;
+  letter-spacing: 3px;
+  border-radius: 30px;
+  border: transparent;
+  cursor: pointer;
+  color: cornflowerblue;
+  outline: none;
+  margin-left: 8px;
+  transition: all 0.3s linear;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.formControl::placeholder {
+  color: cornflowerblue;
+}
+.btnSubmit:hover {
+  color: pink;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.footer {
+  background: black;
+  text-align: center;
+  color: white;
+  padding: 50px 0px;
+}
+.footerLinks,
+.footerIcons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.footerLink {
+  color: white;
+  margin-right: 16px;
+  letter-spacing: 3px;
+  transition: all 0.3s linear;
+}
+
+.footerLink:hover {
+  color: cornflowerblue;
+}
+.footerIcon {
+  font-size: 30px;
+  color: cornflowerblue;
+  margin-right: 15px;
+}
+.company {
+  letter-spacing: 3px;
+}
+
+.navToggle {
+  display: none;
+}
+
+.showLinks {
+  display: block !important;
+  height: 250px;
+}
+@media screen and (max-width: 768px) {
+  .navDiv {
+    display: block;
+  }
+  .navLinks {
+    display: none;
+  }
+  .navLink:hover {
+    background: blueviolet;
+    color: white;
+  }
+  .navIcons {
+    display: none;
+  }
+  .navToggle {
+    display: block;
+    font-size: 30px;
+    color: cornflowerblue;
+    background: white;
+    border: none;
+  }
+  .navToggle:hover {
+    transform: scale(1.2);
+  }
+  .navHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .contactContainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .formControl {
+    min-width: 100%;
+    margin-top: 20px;
+  }
+  .btnSubmit {
+    width: 30%;
+    margin-top: 20px;
+  }
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerLinks {
+    flex-direction: column;
+  }
+  .bannerBtn {
+    padding: 15px 10px;
+    font-size: 18px;
+  }
+  .aboutContainer {
+    flex-direction: column;
+    margin: 0;
+    padding: 30px;
+  }
+  .aboutImg {
+    width: 100%;
+  }
+  .aboutInfo {
+    width: 100%;
+  }
+  .btnDiv {
+    text-align: center;
+  }
+  .serviceIcon {
+    display: flex;
+    min-width: 60px;
+    justify-content: center;
+  }
+  .service {
+    margin-bottom: 15px;
+  }
+  .tourCards {
+    margin: 0px 20px;
+  }
+  .tourCard {
+    width: 100%;
+  }
+  .galleryImgContainer {
+    width: 100%;
+  }
+  .footer {
+    padding: 100px 0px;
+  }
+  .footerLinks li {
+    padding: 10px 0px;
+  }
+}
